@@ -26,9 +26,10 @@ public struct Theme {
   var tintColor: UniversalColor = UniversalColor.blue
   var cursorColor: UniversalColor = UniversalColor.blue
   var styles: [MarkdownNode.MarkdownType: Style] = [:]
+  var baseFontSize: CGFloat?
 
-  public init(_ name: String) {
-    self.init()
+  public init(_ name: String, baseFontSize: CGFloat? = nil) {
+    self.init(baseFontSize: baseFontSize)
     let bundle = Bundle.module
 
     guard let path = bundle.path(forResource: "Themes/\(name)", ofType: "json") else {
@@ -40,14 +41,15 @@ public struct Theme {
     self.init(themePath: path)
   }
 
-  public init(themePath: String) {
-    self.init()
+  public init(themePath: String, baseFontSize: CGFloat? = nil) {
+    self.init(baseFontSize: baseFontSize)
     if let data = convertFile(themePath) {
       configure(data)
     }
   }
 
-  public init() {
+  public init(baseFontSize: CGFloat? = nil) {
+    self.baseFontSize = baseFontSize
     MarkdownNode.MarkdownType.allCases.forEach { type in
       styles[type] = Style()
     }
@@ -83,7 +85,7 @@ public struct Theme {
   mutating private func configureStyle(_ attributes: [String: AnyObject]) -> [NSAttributedString
     .Key: Any]? {
     var stringAttributes: [NSAttributedString.Key: Any] = [:]
-    var fontSize: CGFloat = (styles[.body]?.attributes[.font] as? UniversalFont)?.pointSize ?? 15
+    var fontSize: CGFloat = baseFontSize ?? (styles[.body]?.attributes[.font] as? UniversalFont)?.pointSize ?? 15
     var font: UniversalFont? = UniversalFont.systemFont(ofSize: fontSize)
     var fontTraits = ""
     attributes.forEach { key, value in
