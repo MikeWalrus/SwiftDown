@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
       "state" : {
-        "revision" : "eee9ad754926c40a0f7e73f152357d37b119b7fa",
-        "version" : "1.7.1"
+        "revision" : "32f641cf24fc7abc1c591a2025e9f2f572648b0f",
+        "version" : "1.7.2"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlCatchException.git",
       "state" : {
-        "revision" : "f809deb30dc5c9d9b78c872e553261a61177721a",
-        "version" : "2.0.0"
+        "revision" : "3b123999de19bf04905bc1dfdb76f817b0f2cc00",
+        "version" : "2.1.2"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mattgallagher/CwlPreconditionTesting.git",
       "state" : {
-        "revision" : "02b7a39a99c4da27abe03cab2053a9034379639f",
-        "version" : "2.0.0"
+        "revision" : "a23ded2c91df9156628a6996ab4f347526f17b6b",
+        "version" : "2.1.2"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Quick/Nimble.git",
       "state" : {
-        "revision" : "e491a6731307bb23783bf664d003be9b2fa59ab5",
-        "version" : "9.0.0"
+        "revision" : "c93f16c25af5770f0d3e6af27c9634640946b068",
+        "version" : "9.2.1"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "fee6933f37fde9a5e12a1e4aeaa93fe60116ff2a",
-        "version" : "1.2.2"
+        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
+        "version" : "1.2.3"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-syntax.git",
       "state" : {
-        "revision" : "27cd6190ce0628847a3f8050794d6e627ad79c08",
-        "version" : "509.0.0-swift-DEVELOPMENT-SNAPSHOT-2023-05-02-a"
+        "revision" : "74203046135342e4a4a627476dd6caf8b28fe11b",
+        "version" : "509.0.0"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/SwiftLint.git",
       "state" : {
-        "revision" : "34f5ffa7f706ed2dfe11bd300e5197e8878e3856",
-        "version" : "0.52.2"
+        "revision" : "6d2e58271ebc14c37bf76d7c9f4082cc15bad718",
+        "version" : "0.53.0"
       }
     },
     {
@@ -104,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/drmohundro/SWXMLHash.git",
       "state" : {
-        "revision" : "4d0f62f561458cbe1f732171e625f03195151b60",
-        "version" : "7.0.1"
+        "revision" : "a853604c9e9a83ad9954c7e3d2a565273982471f",
+        "version" : "7.0.2"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jpsim/Yams.git",
       "state" : {
-        "revision" : "f47ba4838c30dbd59998a4e4c87ab620ff959e8a",
-        "version" : "5.0.5"
+        "revision" : "0d9ee7ea8c4ebd4a489ad7a73d5c6cad55d6fed3",
+        "version" : "5.0.6"
       }
     }
   ],
