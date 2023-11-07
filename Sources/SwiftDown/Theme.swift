@@ -85,7 +85,7 @@ public struct Theme {
   mutating private func configureStyle(_ attributes: [String: AnyObject]) -> [NSAttributedString
     .Key: Any]? {
     var stringAttributes: [NSAttributedString.Key: Any] = [:]
-    var fontSize: CGFloat = baseFontSize ?? (styles[.body]?.attributes[.font] as? UniversalFont)?.pointSize ?? 15
+    var fontSize = baseFontSize ?? (styles[.body]?.attributes[.font] as? UniversalFont)?.pointSize ?? 15
     var font: UniversalFont? = UniversalFont.systemFont(ofSize: fontSize)
     var fontTraits = ""
     attributes.forEach { key, value in
