@@ -5,10 +5,10 @@
 //  Created by Quentin Eude on 16/03/2021.
 //
 
-#if os(iOS)
+#if os(iOS) || os(visionOS)
   import UIKit
 
-  // MARK: - SwiftDown iOS
+  // MARK: - SwiftDown iOS and visionOS
   public class SwiftDown: UITextView, UITextViewDelegate {
     var storage: Storage = Storage()
     var highlighter: SwiftDownHighligther?

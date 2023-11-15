@@ -8,8 +8,8 @@
 import Down
 import SwiftUI
 
-#if os(iOS)
-  // MARK: - SwiftDownEditor iOS
+#if os(iOS) || os(visionOS)
+  // MARK: - SwiftDownEditor iOS and visionOS
 public struct SwiftDownEditor: UIViewRepresentable {
   @Binding var text: String {
     didSet {
@@ -68,7 +68,7 @@ public struct SwiftDownEditor: UIViewRepresentable {
     }
   }
 
-  // MARK: - SwiftDownEditor iOS Coordinator
+  // MARK: - SwiftDownEditor iOS/visionOS Coordinator
   extension SwiftDownEditor {
     public class Coordinator: NSObject, UITextViewDelegate {
       var parent: SwiftDownEditor
@@ -87,7 +87,7 @@ public struct SwiftDownEditor: UIViewRepresentable {
     }
   }
 
-  // MARK: - iOS Specifics modifiers
+  // MARK: - iOS/visionOS Specifics modifiers
   extension SwiftDownEditor {
     public func autocapitalizationType(_ type: UITextAutocapitalizationType) -> Self {
       var new = self

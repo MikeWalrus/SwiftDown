@@ -71,7 +71,13 @@ final class UtilsTests: XCTestCase {
     let font = UniversalFont.systemFont(ofSize: 14)
     let updatedFont = font.with(traits: "bold", size: 16)
     expect(updatedFont?.fontDescriptor.pointSize).to(equal(16))
-    expect(updatedFont?.fontDescriptor.symbolicTraits.rawValue).to(equal(font.fontDescriptor.symbolicTraits.rawValue + UniversalFontDescriptor.SymbolicTraits.bold.rawValue))
+      
+    #if os(macOS)
+    let bold = UniversalFontDescriptor.SymbolicTraits.bold.rawValue
+    #else
+    let bold = UniversalFontDescriptor.SymbolicTraits.traitBold.rawValue
+    #endif
+    expect(updatedFont?.fontDescriptor.symbolicTraits.rawValue).to(equal(font.fontDescriptor.symbolicTraits.rawValue + bold))
   }
   
   func testFontFromTraitsAndSizeWithUnknownTraits() {
